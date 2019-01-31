@@ -1,7 +1,7 @@
 import React from "react";
 import Aux from "../../hoc/Aux/Aux";
 import Sundae from "../../components/Sundae/Sundae";
-import BuildControls from "../../components/Cake/BuildControls/BuildControls";
+import BuildControls from "../../components/Sundae/BuildControls/BuildControls";
 
 const INGREDIENT_PRICES = {
   brownie: 2,
@@ -13,12 +13,12 @@ const INGREDIENT_PRICES = {
   cherry: 0.25
 };
 
-const flavors = [vanilla, chocolate, strawberry, cnc, mint];
-const candy = [rainbow, chocolate, oreo, mnm, gummy];
-const liquid = [fudge, caramel, pb];
-const fruit = [banana, strawberry, blueberry];
-const quantity = [brownie, whippedCream, cherry];
-// const free = [flavor, liquidTopping, whippedCream, cherry];
+// const flavors = ["vanilla", "chocolate", "strawberry", "cnc", "mint"];
+// const candy = ["rainbow", "chocolate", "oreo", "mnm", "gummy"];
+// const liquid = ["fudge", "caramel", "pb"];
+// const fruit = ["banana", "strawberry", "blueberry"];
+const quantity = ["brownie", "whippedCream", "cherry"];
+// const free = ['flavor', 'liquidTopping', 'whippedCream', 'cherry'];
 // first flavor, liquidTopping, whippedCream, and cherry are free, will cost 4 initially
 // TODO: implement this later
 
@@ -66,6 +66,7 @@ class SundaeBuilder extends React.Component {
         <BuildControls
           ingredientAdded={this.addIngredientHandler}
           ingredientRemoved={this.removeIngredientHandler}
+          price={this.state.totalPrice}
         />
       </Aux>
     );
