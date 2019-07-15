@@ -1,5 +1,6 @@
 import React from "react";
 import BuildControl from "./BuildControl/BuildControl";
+import "./BuildControls.css";
 
 const controls = [
   { label: "Flavors", type: "flavor" },
@@ -9,7 +10,7 @@ const controls = [
 ];
 
 const buildControls = props => (
-  <div>
+  <div className="BuildControls">
     <p>
       Current Price: <b>${props.price.toFixed(2)}</b>
     </p>

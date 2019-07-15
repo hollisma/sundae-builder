@@ -1,0 +1,90 @@
+.WhippedCream {
+	height: 8%;
+	width: 30%;
+	background: linear-gradient(#ffffff, #d4d4d4);
+	border-radius: 30%;
+	box-shadow: inset -3px -2px #a1a1a1;
+	margin: 2% auto;
+}
+
+.WhippedCream::after {
+	content: "";
+	height: 8%;
+	width: 50%;
+	background: linear-gradient(#ffffff, #d4d4d4);
+	border-radius: 30%;
+	box-shadow: inset -3px -2px #a1a1a1;
+	margin: 2% auto;
+}
+
+.WhippedCream::before {
+	content: "";
+	height: 100%;
+	width: 10%;
+	background: linear-gradient(#ffffff, #d4d4d4);
+	border-radius: 30%;
+	box-shadow: inset -3px -2px #a1a1a1;
+	margin: 2% auto;
+
+	/* content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #f02424;
+	left: -170%;
+	top: -260%;
+	border-radius: 40%;
+	transform: rotate(60deg);
+	box-shadow: inset -1px -2px #c9c9c9; */
+}
+
+.Cherry {
+	height: 18%;
+	width: 18%;
+	background: linear-gradient(#df4545, #ec2424);
+	border-radius: 50% 50% 50% 50%;
+	box-shadow: inset -5px -6px #b80000;
+	margin: 2% auto;
+	position: relative;
+}
+
+.Scoop {
+	width: 50%;
+	height: 50%;
+	background: linear-gradient(#e9d9a7, #c2b26a);
+	box-shadow: inset -5px -6px #7e7c1e;
+	margin: 2% auto;
+	border-radius: 100%;
+}
+
+.LiquidTopping {
+	width: 80%;
+	height: 8%;
+	background: linear-gradient(hsla(23, 88%, 26%, 0.815), #702e05);
+	box-shadow: inset -5px -6px rgb(88, 30, 2);
+	margin: 2% auto;
+	border-radius: 15px;
+}
+
+.Cheese {
+	width: 90%;
+	height: 5%;
+	margin: 2% auto;
+	background: linear-gradient(#f4d004, #d6bb22);
+	border-radius: 20px;
+}
+
+.Salad {
+	width: 85%;
+	height: 7%;
+	margin: 2% auto;
+	background: linear-gradient(#228c1d, #91ce50);
+	border-radius: 20px;
+}
+
+.Bacon {
+	width: 80%;
+	height: 3%;
+	background: linear-gradient(#bf3813, #c45e38);
+	margin: 2% auto;
+}
